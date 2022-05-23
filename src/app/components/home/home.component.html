@@ -1,1 +1,16 @@
-<p>home works!</p>
+<div class="row">
+    <div class="col-sm-12 card text-center">
+        <h1>Home Page</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4 card m-2 d-flex" *ngFor="let data of homeData">
+        <div class="col-sm-4">
+            <h2>{{data.title}}</h2>
+            <p>{{data.description}}</p>
+        </div>
+        <div class="col-sm-7">
+            <img src="{{data.thumb}}" alt="Product image" class="c-img-width">
+        </div>
+    </div>
+</div>
